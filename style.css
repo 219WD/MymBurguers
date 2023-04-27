@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600&display=swap');
+
+:root{
+--raisin-black: hsla(345, 6%, 13%); 
+
+--selective-yellow: hsla(44, 97%, 49%, 1);
+
+ --silver: hsla(0, 0%, 69%, 1); 
+
+--ut-orange: hsla(32, 100%, 49%, 1);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 5%;
+    height: 100px;
+    background: var(--raisin-black);
+}
+
+nav .logo{
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.animate__flash{
+    animation: animate__flash;
+    animation-duration: 2s;
+}
+
+nav .list{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+}
+
+nav .list li{
+    list-style: none;
+}
+
+nav .list a{
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--silver);
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+nav .list a:hover{
+    background: var(--ut-orange);
+    color: #ffffff;
+}
+
+#toogle{
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-bars{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-bars .line{
+    width: 30px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3 ease-in-out;
+}
+
+.logIn{
+    border: 2px solid #ffffff;
+    margin-left: 15px;
+}
+
+/* FIN DEL NAV */
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.loguin{
+    display: flex;
+    width: 80%;
+    background: var(--selective-yellow);
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.loguin h2{
+    font-weight: 500;
+}
+
+.img{
+    width: 50%;
+}
+
+.img img{
+    width: 470px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form{
+    width: 80%;
+}
+
+.form form .forgot{
+    text-decoration: none;
+}
+
+.form .social ul{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.form .social ul a{
+    color: var(--raisin-black);
+}
+
+.form .social ul a:hover{
+    color: #ffffff;
+}
+
+@media(max-width: 768px){
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav .list{
+        float: none;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        background: var(--raisin-black);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .list a{
+        font-size: 20px;
+    }
+
+    nav :checked ~ .list{
+        bottom: 0;
+    }
+
+    nav .icon-bars{
+        display: block;
+    }
+
+    .img{
+        display: none;
+    }
+
+    .loguin{
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 1023px){
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav .list{
+        float: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        background: var(--raisin-black);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .list a{
+        font-size: 20px;
+    }
+
+    nav :checked ~ .list{
+        bottom: 0;
+    }
+
+    nav .icon-bars{
+        display: block;
+    }
+
+    .img{
+        width: auto;
+    }
+}
