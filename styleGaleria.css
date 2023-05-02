@@ -1,7 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600&display=swap');
 
 :root{
---raisin-black: hsla(345, 6%, 13%); 
+--raisin-black: hsla(345, 6%, 13%, 1); 
 
 --selective-yellow: hsla(44, 97%, 49%, 1);
 
@@ -10,12 +17,6 @@
 --ut-orange: hsla(32, 100%, 49%, 1);
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 nav{
     position: relative;
     left: 0;
@@ -91,94 +92,117 @@ nav .icon-bars .line{
     transition: all .3 ease-in-out;
 }
 
+
 .logIn{
-    border: 2px solid #ffffff;
-    margin-left: 15px;
+  border: 2px solid #ffffff;
+  margin-left: 15px;
 }
 
-/* FIN DEL NAV */
-.log{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-}
-
-.loguin{
-    display: flex;
-    width: 80%;
-    background: var(--selective-yellow);
-    border-radius: 15px;
-    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
-}
-
-.loguin h2{
-    font-weight: 500;
-}
-
-.img{
-    width: 50%;
-}
-
-.img img{
-    width: 470px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.form form{
-    width: 80%;
-}
-
-.form form .forgot{
-    text-decoration: none;
-}
-
-.form .social ul{
-    display: flex;
-    list-style: none;
-    font-size: 25px;
-    justify-content: space-between;
-    margin-top: 5px;
-}
-
-.form .social ul a{
-    color: var(--raisin-black);
-}
-
-.form .social ul a:hover{
-    color: #ffffff;
-}
-
-
-
-/* codigo lucas */
 footer{
-    background: var(--raisin-black);
-    color: var(--silver);
-    padding-top: 5px;
+  background: var(--raisin-black);
+  color: var(--silver);
+  padding-top: 5px;
 }
 
 .contenedor_main{
-    height: 300px;
+  height: 300px;
 }
 .enlaces{
-    color: white;
-    text-decoration: none;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  /* justify-content: center; */
 }
+
+
+
+
+
+.contenedor{
+  background-color: var(--silver);
+  color: var(--raisin-black);
+  padding: 20px;
+  font-family: 'Anton', sans-serif;
+}
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+
+}
+
+
+
+.galeria img {
+  max-width: 100%;
+
+}
+
+  h2{
+    text-align: center;
+    width: 30%;
+  }
+
+  .hover{
+    padding: 2px;
+ 
+  }
+  .hover li a{
+
+    border-radius: 25px;
+  }
+
+  .hover li a:hover{
+    background: var(--ut-orange);
+    color: #ffffff;
+
+  }
+
+.redes{
+margin-top: 50px;
+margin-right:100px ;
+}
+
+.redes p a{
+  margin: 10px;
+}
+
+.link1 :hover{
+  color: blue;
+}
+
+.link2 :hover{
+  color: blueviolet;
+}
+
+.link3 :hover{
+  color: rgb(43, 226, 226);
+}
+
+
+.tranform:hover{
+   
+  transform: scale(1.3);
+}
+
+
+@media  (min-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+
 
 @media(max-width: 768px){
     nav .logo{
@@ -215,13 +239,6 @@ footer{
         display: block;
     }
 
-    .img{
-        display: none;
-    }
-
-    .loguin{
-        padding-top: 20px;
-    }
 }
 
 @media(max-width: 1023px){
@@ -257,9 +274,5 @@ footer{
 
     nav .icon-bars{
         display: block;
-    }
-
-    .img{
-        width: auto;
     }
 }
