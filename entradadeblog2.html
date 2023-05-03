@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyM Burguers</title>
+    <meta name="description" content="MyM Hamburguesas">
+    <meta name="keywords" content="hamburguesa hamburguesas mym">
+    <meta name="author" content="Grupo2">
+    <link rel="stylesheet" href="entradadeblog1.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="toogle">
+            <div class="logo animate__flash"><img src="/assets/logo.png" width="100px" height="100px"></div>
+            <ul class="list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="/galeria.html">Galeria</a></li>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#register" data-bs-whatever="@mdo">Registrarse</button>
+<div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Registro</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form>
+      <div class="modal-body">
+
+        
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre de usuario" required minlength="2">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Tu contraseña" required minlength="8">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Repetir contraseña</label>
+          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Repetir contraseña" required minlength="8">
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recibir notificaciones al mail</label>
+        </div>
+
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+<li><a href="/Login.html" class="logIn">Iniciar Sesion</a></li>
+            </ul>
+    
+            <label for="toogle" class="icon-bars">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    </header>
+    <!-- FIN DEL NAV --> 
+    
+    <!-- CODIGO LUCI -->
+
+    <main class="entrada">
+        <section >
+            <div class="contenedor">
+               <div class="izquierda">
+                   <img src="/assets/ps/card2.jpg" alt="papas" id="papas">
+                   <p class="btn btn-warning text-center mt-1 d-flex justify-content-center" id="boton">Agregar al Carrito <i class="fa-solid fa-cart-shopping ms-2" style="color: #080808;"></i></p> 
+               </div>
+               
+               <div class="derecha">
+                   <h1 class="titulo mb-5"> Papitas Yankees! </h1> 
+                   <p>Inspiradas en las tipicas papas yankees, cuando pruebes una, no vas a poder parar de comerlas! 
+                    Estas papas tipo rústicas, que conservan todo el sabor de la sal crujiente en su piel, están cubiertas de
+                     delicioso queso cheddar, panceta crujiente y verdeo. 
+                     Son definitivamente el mejor plato para acompañar una cerveza bien helada con la familia y amigos.               
+                     Te vas a quedar con la tentación de probarlas?  
+                     <br> 
+                   </p> 
+                   <!--<div class="contiene">
+                       <ul>
+                           <li>Papas tipo rústicas con piel </li>
+                           <li> Cobertura de queso cheddar</li>
+                           <li>Bacon crujiente</li>
+                           <li>Lluvia de verdeo</li>                
+                       </ul>
+                   </div>-->                  
+               </div>
+           </div>
+        </section>
+        
+        <section class="container" id="parteabajo">
+           <article class="row">
+               <div id="reviews" class="col-lg-7 col-md-12 col-sm-12 text-center ms-2 me-3">
+                   <h5 class="mt-2 mb-4 text-center" id="title">Lo que comentan los que las probaron...</h5>
+                      <!--<img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class=" mb-3 rounded-circle shadow-1-strong" width="100" height="100" />-->
+                     
+                      <div id="Juli">
+                        <h5 class="mb-3 fw-bold">Julian Alvarez</h5>
+                        <p><i class="fas fa-quote-left"></i> Estan buenisimas!! Las pido siempre para acompañar una buena cervecita.   
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center">
+                          <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                          </li>
+                          <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                          </li>
+                          <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                          </li>
+                          <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                          </li>
+                          <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                          </li>
+                        </ul>
+                    </div>
+    
+                    <div id="Maria">
+                    <!--<img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" class="rounded-circle mb-3 shadow-1-strong" width="100" height="100" />-->
+                        <h5 class="mb-3 fw-bold">Martina Alcaraz</h5>
+                        <p><i class="fas fa-quote-left pe-1"></i> Que decir? La foto habla por si sola! mmmmmmm son deliciosas!!</p>
+                        <ul class="list-unstyled d-flex justify-content-center mt-2">
+                                     <li>
+                                       <i class="fas fa-star fa-sm text-warning"></i>
+                                     </li>
+                                     <li>
+                                       <i class="fas fa-star fa-sm text-warning"></i>
+                                     </li>
+                                     <li>
+                                       <i class="fas fa-star fa-sm text-warning"></i>
+                                     </li>
+                                     <li>
+                                       <i class="fas fa-star fa-sm text-warning"></i>
+                                     </li>
+                                     <li>
+                                       <i class="fas fa-star fa-sm text-warning"></i>
+                                     </li>
+                                   </ul>
+                       </div>
+            
+                       <div id="Noelia">
+                           <!--<img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" class="mb-3 rounded-circle shadow-1-strong" width="100" height="100" />-->
+                           <h5 class="mb-3 fw-bold"> Nestor Capurro </h5>
+                           <p> <i class="fas fa-quote-left pe-2"></i> Riquisimas!!  </p>
+                           <ul class="list-unstyled d-flex justify-content-center mt-0">
+                                     <li>
+                                       <i class="fas fa-star fa-sm text-warning"></i>
+                                     </li>
+                                     <li>
+                                       <i class="fas fa-star fa-sm text-warning"></i>
+                                     </li>     
+                                     <li>
+                                        <i class="fas fa-star fa-sm text-warning"></i>
+                                      </li>
+                                      <li>
+                                        <i class="fas fa-star fa-sm text-warning"></i>
+                                      </li>     
+                            </ul>
+                        </div>
+        
+                        <div id=" Pablo">
+                            <h5 class="mb-3 fw-bold"> Tomas Dorrego </h5>
+                            <p><i class="fas fa-quote-left"></i> Estan muy bien, pero nada super innovador.  
+                            </p>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                          </div>
+        
+                        <div>
+                            <h5 class="mb-3 fw-bold"> Juana Amadeo </h5>
+                            <p><i class="fas fa-quote-left"></i>Riquisima! Es la mejor opcion para compartir con amigos un viernes por la noche
+                            </p>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                        </div>
+                <div>
+                 <p class="btn btn-warning mt-3 ">Cargar mas opiniones</p>
+                </div>
+                </div>
+        
+            <div id="comentario" class="col-lg-4 col-md-12 col-sm-12 text-center"> 
+               <form id="form">
+                       <h5 class="mt-0">Queremos saber tu opinión </h5> 
+                       <label for="comment" class="form-label mt-2">Nombre y apellido</label>
+                       <input type="text" class="form-control" id="comment" placeholder="Juan Perez" required>
+                       <div class="mb-3">
+                           <label for="exampleFormControlTextarea1" class="form-label mt-3">Escribe tu comentario aca </label>
+                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+           
+                           <input class="btn btn-warning mt-3 d-flex justify-content-center" type="submit" value="Enviar comentario">
+               </form>
+           </div>
+           <div class="mt-4 d-flex justify-content-center ">
+               <img src="https://pbs.twimg.com/media/E4uz0MVXMAAZ3uu.jpg:large"  class="w-100" alt="publicidad">
+              </div>
+        
+           </div> 
+        
+           </article>
+        </section>
+    </main>
+       
+
+    <!-- FIN DEL CODIGO LUCI -->
+
+
+        <!-- footer lucas -->
+        <footer>
+          <section class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-3">
+                <div class="logo"> <a href="/index.html"><img src="/assets/logo.png" width="100px" height="100px"> </a></div>
+                <a href="">
+                  <img src="" alt="" />
+                </a>
+              </div>
+    
+              <div class="col-sm-12 col-md-6">
+               
+    
+                <div class="d-flex justify-content-center redes ">
+                 
+                  <p > <a href="" class="enlaces  link1"><ion-icon name="logo-facebook"></ion-icon></a> </p>
+                  <p> <a href="https://www.instagram.com/mym.burger.club/" target="_blank" class="enlaces link2"><ion-icon name="logo-instagram"></ion-icon></a> </p>
+                  <p> <a href="" class="enlaces link3"><ion-icon name="logo-twitter"></ion-icon></a> </p>
+                  
+                </div>
+              </div>
+    
+              <div class="col-sm-12 col-md-3">
+                <p>Horarios de Atencion</p>
+                <p>Lun a Vier:9-20hs</p>
+                <p>Sab, Dom y feriados 9-13hs</p>
+              </div>
+              <hr>
+             
+             
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-4">
+                  <p>Politicas del consumidor</p>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                  <p>Defensa del consumidor</p>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                  <p>Proteccion de datos personales</p>
+              </div>
+          </div>
+          
+            
+            
+          </section>
+         
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
