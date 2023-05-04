@@ -98,7 +98,7 @@ nav .icon-bars .line{
     margin-left: 15px;
 }
 
-/* FIN DEL NAV */
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@700&family=Poppins:wght@600&display=swap');
@@ -132,8 +132,6 @@ body{
 }
 
 
-
-/* CODIGO LUCAS */
 
 footer{
     background: var(--raisin-black);
@@ -187,7 +185,7 @@ footer{
     
   }
 
-/* FIN DEL CODIGO LUCAS */
+
 
 @media(max-width: 768px){
     nav .logo{

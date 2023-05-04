@@ -8,7 +8,7 @@
     <meta name="description" content="MyM Hamburguesas">
     <meta name="keywords" content="hamburguesa hamburguesas mym">
     <meta name="author" content="Grupo2">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
@@ -18,9 +18,9 @@
             <input type="checkbox" id="toogle">
             <div class="logo animate__flash"><img src="/assets/logo.png" width="100px" height="100px"></div>
             <ul class="list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="/aboutUs.html">Nosotros</a></li>
                 <li><a href="/galeria.html">Galeria</a></li>
                 <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#register" data-bs-whatever="@mdo">Registrarse</button>
 <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -79,19 +79,71 @@
             </label>
         </nav>
     </header>
-    <!-- FIN DEL NAV --> 
+
+
+    <main class=" row d-flex align-items-center">
+      <section class="contactcontainer mt-3">
+          <div class="contact">
+              <img class="img" src= "/assets/PS/logo.jpg" alt="mymlog" >
+  
+          <div class="container">
+              <form>
+            
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>
     
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre de usuario" required minlength="2">
+            </div>
+    
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+    
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recibir notificaciones al mail</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          
+          </div>
+    
+          
+        </div>
+      </div>
+      </form>
+    </section>
+  </main>
+
+    <article class="container-fluid d-flex justify-content-center">
+              <div class="mapa">
+                  <div class="texto">
+
+                  <h2>encontranos en</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quam maiores perspiciatis perferendis recusandae quos magnam qui blanditiis, facere corrupti, nobis voluptatum numquam quas quod similique? Ut numquam perspiciatis rem.</p>
+              </div>
+              
+                  
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.7834196966833!2d-65.15727902746312!3d-26.815023976705476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225f688e5cda5f%3A0x72de04fe9dfc365!2sMyM%20burger%20club!5e0!3m2!1ses-419!2sar!4v1683139664804!5m2!1ses-419!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  
+              </div>
+              
+           </section>
+
+</article>
 
 
-        <!-- footer lucas -->
         <footer>
-          <section class="container">
+          <section class="container-ft">
             <div class="row">
               <div class="col-sm-12 col-md-3">
-                <div class="logo"> <a href="/index.html"><img src="/assets/logo.png" width="100px" height="100px"> </a></div>
-                <a href="">
-                  <img src="" alt="" />
-                </a>
+                <div class="logo text-center mx-auto"> <a href="#"><img src="/assets/ps/logo2.png" width="140px" height="140px"> </a></div>
+
               </div>
     
               <div class="col-sm-12 col-md-6">
@@ -99,43 +151,50 @@
     
                 <div class="d-flex justify-content-center redes ">
                  
-                  <p > <a href="" class="enlaces  link1"><ion-icon name="logo-facebook"></ion-icon></a> </p>
+                  <p> <a href="/error404.html" class="enlaces  link1"><ion-icon name="logo-facebook"></ion-icon></a> </p>
                   <p> <a href="https://www.instagram.com/mym.burger.club/" target="_blank" class="enlaces link2"><ion-icon name="logo-instagram"></ion-icon></a> </p>
-                  <p> <a href="" class="enlaces link3"><ion-icon name="logo-twitter"></ion-icon></a> </p>
+                  <p> <a href="/error404.html" class="enlaces link3"><ion-icon name="logo-twitter"></ion-icon></a> </p>
                   
                 </div>
               </div>
     
-              <div class="col-sm-12 col-md-3">
-                <p>Horarios de Atencion</p>
-                <p>Lun a Vier:9-20hs</p>
-                <p>Sab, Dom y feriados 9-13hs</p>
+              <div class="col-sm-12 col-md-3 mt-4">
+                <p class="text-center mx-auto ">Horarios de Atencion</p>
+                <p class="text-center mx-auto" >Lun a Vier:9-20hs</p>
+                <p class="text-center mx-auto">Sab, Dom y feriafos 9-13hs</p>
               </div>
               <hr>
              
              
             </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-4">
-                  <p>Politicas del consumidor</p>
+              <div class="container-ft">
+                <div class="row ">
+                  <div class="col-sm-12  col-md-4">
+                      <p  class="text-center mx-auto" >Politicas del consumidor</p>
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                      <p class="text-center mx-auto" >Defensa del consumidor</p>
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                      <p class="text-center mx-auto" >Proteccion de datos personales</p>
+                  </div>
+                  <hr>
               </div>
-              <div class="col-sm-12 col-md-4">
-                  <p>Defensa del consumidor</p>
               </div>
-              <div class="col-sm-12 col-md-4">
-                  <p>Proteccion de datos personales</p>
-              </div>
-          </div>
+         
+          
+         
+    
           
             
             
           </section>
          
         </footer>
+
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    </body>
     </html>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

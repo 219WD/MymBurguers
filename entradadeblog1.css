@@ -98,12 +98,6 @@ nav .icon-bars .line{
     margin-left: 15px;
 }
 
-/* FIN DEL NAV */
-
-
-
-/*Codigo Luci*/
-
 
 
 #entrada{
@@ -208,8 +202,6 @@ box-shadow: 10px 10px 26px -2px rgba(0,0,0,0.44);
 }
 
 
-/* CODIGO LUCAS */
-
 footer{
     background: var(--raisin-black);
     color: var(--silver);
@@ -262,7 +254,6 @@ footer{
     
   }
 
-/* FIN DEL CODIGO LUCAS */
 
 @media(max-width: 768px){
     nav .logo{

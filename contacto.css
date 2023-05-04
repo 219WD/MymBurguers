@@ -98,9 +98,7 @@ nav .icon-bars .line{
     margin-left: 15px;
 }
 
-/* FIN DEL NAV */
 
-/* LOGIN */
 .log{
     display: flex;
     justify-content: center;
@@ -181,9 +179,54 @@ animation-duration: 1s;
     }
 }
 
-/* FIN DEL LOGIN */
+main{
+  width: 100vw;
+  height: 100vh;
+  background: var(--silver);
+}
 
-/* CODIGO LUCAS */
+article{
+    background: var(--silver);
+}
+
+.container{
+
+  width: 80%;
+  background: var(--selective-yellow);
+  padding: 20px;
+}
+.contactcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact{
+  display: flex;
+  width: 80%;
+  background: var(--selective-yellow);
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.contact img{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.mapa{
+  width: 50%;
+  background: var(--silver);
+  display:flex;
+}
+.texto{
+  width: 50%;
+}
+
+
 
 footer{
     background: var(--raisin-black);
@@ -236,7 +279,6 @@ footer{
   
   }
 
-/* FIN DEL CODIGO LUCAS */
 
 @media(max-width: 768px){
     nav .logo{
