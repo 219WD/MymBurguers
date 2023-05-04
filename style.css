@@ -189,22 +189,25 @@ main{
     height: auto;
     background-color: var(--silver);
 }
+
 .column{
     display: flex;
 }
 .cards{
-    width: auto;
+    width: 28rem;
     display: flex;
     flex-direction: row;
     margin: 10px;
 
 }
+.card{
+    width: 28rem;
+    margin: 10px;
+}
 
 
 #searchInput{
-    display: flex;
-    align-content: center;
-    width: 100%;
+    width: 102%;
 }
 
 
@@ -254,11 +257,11 @@ table{
     background-color: #ffffff;
 }
 .pagination{
-    width: 90%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: 2rem;
-    justify-content: end;
+    justify-content: start;
 }
 
 @media (min-width: 1080px){
@@ -267,8 +270,18 @@ table{
         display:flex;
         flex-direction :row ;
         padding-bottom :2rem;
-        justify-content :end;
+        justify-content :center;
     }
+    
+}
+@media (min-width:308px){
+    section .pagination{
+        width: 100%;
+        display:flex;
+        flex-direction :row ;
+        padding-bottom :2rem;
+        justify-content :end;}
+    
     
 }
 /* FIN DEL CODIGO DE ABEL */
@@ -335,7 +348,7 @@ footer{
 
 /* FIN DEL CODIGO LUCAS */
 
-@media(max-width: 768px){
+@media screen and (max-width: 768px){
     
     nav .logo{
         float: none;
@@ -379,7 +392,7 @@ footer{
         padding-top: 20px;
     }
     nav {
-        z-index: 5;
+        z-index: 1;
     }
 
     .redes{
@@ -396,41 +409,43 @@ footer{
     /* ESTEN  CODIGO ES DEL MAIN */
     main{
         width: 100%;
-        height: 160rem;
+        height: 170rem;
     }
     
     
     section .cards{
         display: flex;
         flex-direction: column;
-    
-    }
-
-    section .card{
-        top: 16rem;
-        margin: 30px;
-        left: 5rem;
+        margin-right: 50ren;
+        width: 28rem;
+        
     }
     
     section .busqueda{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        width: 27rem; 
+        z-index: 1;
+        position: relative;
+        top: 130rem;
+        right: 20rem;
+        width: 80rem;
+        height: 10%;
+    }
+    
+    table{
+        width: 18rem;
+        right: 25rem;
     }
     section .pagination{
-        width: 140%;
+        width: 80%;
         padding-bottom: 1px;
-        height: 32.5rem;
         display: flex;
-        top:0rem;
+        top:1rem;
         align-items: center; 
     }
 }
 
 
 
-@media(max-width: 1023px){
+@media (max-width: 1023px){
     nav .logo{
         float: none;
         width: auto;
@@ -464,7 +479,9 @@ footer{
     nav .icon-bars{
         display: block;
     }
-
+    #searchInput{
+        width: 135%;
+    }
     .img{
         width: auto;
     }
@@ -485,3 +502,4 @@ footer{
     }
     
 }
+
