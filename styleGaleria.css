@@ -198,6 +198,65 @@ margin-right:100px ;
 }
 
 
+footer{
+  background: var(--raisin-black);
+  color: var(--silver);
+  padding-top: 5px;
+}
+
+.contenedor_main{
+  height: 300px;
+  
+}
+.enlaces{
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.redes{
+  margin-top: 50px;
+  margin-right:100px ;
+  }
+  
+  .redes p a{
+  margin: 10px;
+  }
+  
+  .link1 :hover{
+  color: blue;
+  }
+  
+  .link2 :hover{
+  color: blueviolet;
+  }
+  
+  .link3 :hover{
+  color: rgb(43, 226, 226);
+  }
+
+  
+@media  (min-width: 768px) {
+  .galeria {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .galeria {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  
+}
+
+
+
+
+
+
+
+
 @media  (min-width: 768px) {
   .galeria {
     grid-template-columns: repeat(3, 1fr);

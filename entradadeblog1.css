@@ -341,3 +341,62 @@ footer{
 }
 
 
+
+
+
+@media(max-width: 992px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        background-color: blue;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .izquierda{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .derecha{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .izquierda img{
+        width: 100%;
+    }
+
+    #comentario{
+        margin-top: 50px;
+    }
+
+    #comentario img{
+        width:80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
+
+}
+
+@media(max-width: 992px){
+    #comentario{
+        margin-top: 50px;
+    }
+    #comentario img{
+         display: none;
+        
+}
+    
+
+}

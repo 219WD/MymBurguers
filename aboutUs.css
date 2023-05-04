@@ -99,19 +99,8 @@ nav .icon-bars .line{
 }
 
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@700&family=Poppins:wght@600&display=swap');
-
-*{
-    margin: 0;
-}
-
-:root{
-    --raisin-black: hsla(345, 6%, 13%, 1);
-    --selective-yellow: hsla(44, 97%, 49%, 1);
-    --silver: hsla(0, 0%, 69%, 1);
-    --ut-orange: hsla(32, 100%, 49%, 1);
+main{
+    background: var(--silver);
 }
 
 body{
@@ -188,6 +177,10 @@ footer{
 
 
 @media(max-width: 768px){
+    nav{
+        z-index: 3;
+    }
+
     nav .logo{
         float: none;
         width: auto;
